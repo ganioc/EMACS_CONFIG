@@ -1,8 +1,7 @@
 (when (>= emacs-major-version 24)                                               
   (require 'package)                                                            
   (package-initialize)                                                          
-  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages\
-/") t)                                                                          
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)                                                                          
   )                                                                             
                                                                                 
 ;(when (fboundp 'windmove-default-keybindings)                                  
@@ -107,8 +106,7 @@ to folding
                                                                                 
 ;; autocomplete mode        
 (require 'auto-complete-config)                                                 
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20150488\
-.1132/dict")                                                                    
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20150488.1132/dict")                                                                    
 (add-to-list 'ac-sources 'ac-source-yasnippet)                                  
 (ac-config-default)                                                             
 (ac-set-trigger-key "TAB")                                                      
@@ -221,8 +219,7 @@ to folding
  '(ansi-color-faces-vector                                                      
    [default default default italic underline success warning error])            
  '(ansi-color-names-vector                                                      
-   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gra\
-y50"])                                                                          
+   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])                                                                          
  '(custom-enabled-themes (quote (manoj-dark))))                                 
 (custom-set-faces                                                               
  ;; custom-set-faces was added by Custom.                                       
