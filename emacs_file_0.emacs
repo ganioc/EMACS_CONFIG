@@ -37,12 +37,20 @@
                                                                                 
 ;; ido mode                                                                     
 (require 'ido)                                                                  
-(ido-mode 1)                                                                    
+(ido-mode 1)            
+
+;; add line num mode
+(global-linum-mode t) 
                                                                                 
 ;; java mode                                                                    
 (require 'jdee)                                                                 
                                                                                 
-(require 'js-doc)                                                               
+(require 'js-doc)    
+(setq js-doc-mail-address "yangjun@nanchao.org"                              
+      js-doc-author (format "Yang Jun <%s>" js-doc-mail-address)             
+      js-doc-url "http://ruff.io"                                            
+      js-doc-license "MIT license")                                          
+                                            
                                                                                 
 (require 'haml-mode)                                                            
 (require 'sass-mode)                                                            
@@ -209,7 +217,8 @@ to folding
   '(define-key html-mode-map (kbd "C-c b") 'web-beautify-html))                 
 (eval-after-load 'css-mode                                                      
   '(define-key css-mode-map (kbd "C-c b") 'web-beautify-css))                   
-                                                                                
+
+
                                                                                 
 (custom-set-variables                                                           
  ;; custom-set-variables was added by Custom.                                   
