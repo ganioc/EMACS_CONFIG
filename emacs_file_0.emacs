@@ -73,9 +73,9 @@
 (setq-default js2-global-externs "jQuery $")                                    
 (setq-default js2-indent-on-enter-key t)                                        
 (setq-default js2-mode-indent-ignore-first-tab t)                               
-(setq-default js2-global-externs '("module" "require" "buster" "sinon" "assert"\
- "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" \
-"__dirname" "console" "JSON"))                                                  
+;;(setq-default js2-global-externs '("module" "require" "buster" "sinon" "assert"\
+;; "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" \
+;;"__dirname" "console" "JSON"))                                                  
                                                                                 
 ;; for js2 code folding                                                         
 ;; If cursor is in the function block, M-x hs-hide-block, the function turns in\
