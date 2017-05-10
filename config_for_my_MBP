@@ -160,7 +160,10 @@
               (define-key js2-mode-map "\C-ci" 'js-doc-insert-function-doc)
               (define-key js2-mode-map "@" 'js-doc-insert-tag)))
 
-
+(setq-default js2-global-externs '("module" "require" "buster" "sinon" "asse\
+   rt" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "loca\
+   tion" "__dirname" "console" "JSON"))   
+   
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
