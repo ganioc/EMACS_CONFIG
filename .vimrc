@@ -1,5 +1,7 @@
 set nocompatible              " be iMproved, required                           
-filetype off                  " required                                        
+filetype off                  " required        
+
+syntax on
                                                                                 
 " set the runtime path to include Vundle and initialize                         
 set rtp+=~/.vim/bundle/Vundle.vim                                               
@@ -60,8 +62,14 @@ let Tlist_Sort_Type = "name"
                                                                                 
 " You Complete Me                
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"                   
-                                                                                
+" g:ycm_use_clangd = 0
+
+
 " NERDTree                                                                      
 let NERDTreeShowHidden=1                                                        
-                                                                                
+
+" Clang-format
+let g:clang_format#auto_format_on_insert_leave=1
+
+
                            
