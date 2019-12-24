@@ -204,7 +204,20 @@ to folding
   (interactive)                                                                 
   (set (make-local-variable 'paredit-space-for-delimiter-predicates)            
        '((lambda (endp delimiter) nil)))                                        
-  (paredit-mode 1))                                                             
+  (paredit-mode 1))    
+
+(autoload 'enable-paredit-mode "paredit"
+           "Turn on pseudo-structural editing of Lisp code."
+           t)
+(add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
+(add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
+(add-hook 'ielm-mode-hook             #'enable-paredit-mode)
+(add-hook 'lisp-mode-hook             #'enable-paredit-mode)
+(add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
+(add-hook 'scheme-mode-hook           #'enable-paredit-mode)
+
+
+                                                         
 (add-hook 'js2-mode-hook 'my-paredit-nonlisp) ;use with the above function      
 
 ;; web-beauty                                                                   
