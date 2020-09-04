@@ -260,3 +260,4 @@ to folding
     (highlight-parentheses-mode t)))                                                    
 (global-highlight-parentheses-mode t)                                                   
                                           
+;; End of file
