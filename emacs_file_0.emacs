@@ -1,7 +1,8 @@
 (when (>= emacs-major-version 24)                                               
   (require 'package)                                                            
   (package-initialize)                                                          
-  (add-to-list 'package-archives '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/packages/") t)                                                                          
+  ;; (add-to-list 'package-archives '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/packages/") t)  
+  (add-to-list 'package-archives '("tsinghua" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/") t)   
   )                                                                             
                                                                                 
 ;(when (fboundp 'windmove-default-keybindings)                                  
