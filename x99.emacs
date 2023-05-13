@@ -116,3 +116,11 @@ down-mode))
 (setq c-basic-offset 4)
 (setq-default indent-tabs-mode nil)
 
+;; lsp-mode
+(require 'lsp-mode)
+(add-hook 'c-mode-hook #'lsp)
+(add-hook 'c++-mode-hook #'lsp)
+
+
+
+
