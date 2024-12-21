@@ -1,0 +1,18 @@
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
+
+syntax on
+syntax enable
+
+filetype plugin on
+filetype indent on
+
+set omnifunc=syntaxcomplete#Complete
+
+set tags=./tags
+set autochdir
+
+set cscopequickfix=s-,c-,d-,i-,t-,e-
+
